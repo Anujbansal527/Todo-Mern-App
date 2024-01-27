@@ -1,0 +1,89 @@
+.todo {
+    min-height: 76vh;
+    width: 100%;
+    position: relative;
+}
+.todo-main{
+    min-width: 50%;
+    padding: 10vh;
+}
+.todo-inputs {
+    min-width: 40vh;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    & input, & textarea{
+    border: none;
+    outline: none;
+    }
+}
+#text-area{
+    display: none;
+    padding-bottom: 2px;
+}
+
+.todo-btn{
+
+    border: none;
+    font-size: 20px;
+    background-color: rgba(32, 13, 85, 0.993);
+    color: white !important;
+
+}
+.todo-btn:hover {
+    transition: .5s;
+    box-shadow: inset 0 0 0 0.2rem rgb(8, 7, 7);
+    background-color: white;
+    color: rgba(32, 13, 85, 0.993) !important;
+  }
+
+  .todo-cards{
+    min-width: 40vh;
+    border: 1px solid rgb(4, 4, 73);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+  }
+
+  .todo-cards:hover{
+    box-shadow: inset 0 0 0 0.2rem rgb(53, 52, 70);
+    overflow-y: hidden;
+  }
+  .para{
+    text-align: justify;
+    text-justify: inter-word;
+    overflow-wrap: break-word;
+  }
+  .icons-div {
+
+    & .icons{
+      padding: 4px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s;
+      border-radius: 20%;
+      
+    }
+    & .icons:hover{
+        box-shadow:rgba(8, 7, 7,0.3) 0px 5px 15px;
+      }
+  }
+  .del:hover{
+    color: red;
+  }
+  .upd:hover{
+    color: rgb(24, 24, 224);
+  }
+
+  .todo-update{
+    padding: 20px ;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    position: fixed;
+    min-width: 50vh ;
+    width: 40%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    top: 150px;
+  }
